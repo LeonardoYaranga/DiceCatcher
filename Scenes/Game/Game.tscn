@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b3upubjmnk1eq"]
+
+[ext_resource type="Texture2D" uid="uid://djjponsttwqfs" path="res://Assets/GemBg.png" id="1_rdw05"]
+[ext_resource type="Script" uid="uid://dd37yws3ngm1v" path="res://Scenes/Game/Game.gd" id="1_xbxml"]
+[ext_resource type="PackedScene" uid="uid://bx7c4mo02v7sl" path="res://Scenes/Fox/Fox.tscn" id="3_xbxml"]
+
+[node name="Game" type="Node2D" unique_id=118243950]
+script = ExtResource("1_xbxml")
+
+[node name="GemBg" type="Sprite2D" parent="." unique_id=1452018571]
+position = Vector2(565, 303)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_rdw05")
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=411784916]
+
+[node name="Fox" parent="SpawnTimer" unique_id=1379112693 instance=ExtResource("3_xbxml")]
+position = Vector2(540, 524)
