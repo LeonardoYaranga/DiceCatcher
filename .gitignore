@@ -1,3 +1,31 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Asset MCP Godot: generated or local-only artifacts
+node_modules/
+build/
+.npm/
+.npx/
+coverage/
+*.tsbuildinfo
+*.js.map
+.DS_Store
+Thumbs.db
+.env
+/src
+/scripts
+/test
+/docs
+/data
+.gitattributes
+CHANGELOG.md
+icon.png
+icon.png.import
+README.en.md
+README.md
+ROADMAP.md
+tsconfig.json
+tsconfig.tsbuildinfo
+package.json
+package-lock.json

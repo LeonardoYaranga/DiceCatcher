@@ -21,3 +21,5 @@ shape = SubResource("CapsuleShape2D_2hawp")
 
 [node name="Sounds" type="AudioStreamPlayer2D" parent="." unique_id=187212861]
 stream = ExtResource("3_aggie")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
